@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-def uppercase(str):
+def uppercase(s):
     uppercase_str = ""
-    for char in str:
-        uppercase_char = chr(
-            ord(char) - 32) if 97 <= ord(char) <= 122 else char
-        uppercase_str += uppercase_char
+    for char in s:
+        uppercase_str += "{}".format(chr(ord(char) - 32))
+    print("{}".format(uppercase_str))
 
-    print("{}\n{}".format(uppercase_str, ""))
