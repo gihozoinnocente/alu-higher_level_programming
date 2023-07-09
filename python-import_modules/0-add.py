@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-def add_0(a, b):
+def add(a, b):
     return a + b
 
-if __name__  == "__main__":
+def main():
     a = 1
     b = 2
 
-    result = add_0(a, b)
+    result = add(a, b)
     print("{} + {} = {}".format(a, b, result))
+
+if __name__ == "__main__":
+    main()
