@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    arguments = sys.argv[1:]
-    num_arguments = len(arguments)
-print(f"{num_arguments} argument{'s' if num_arguments != 1 else ''}:")
-for i, arg in enumerate(arguments, start=1):
-    print(f"{i}: {arg}")
+    suffix = "arguments"
+    if (len(sys.argv) - 1 == 1):
+        suffix = "argument"
+    if (len(sys.argv) - 1 > 0):
+        suffix += ":"
+    else:
+        suffix += "."
+    print("{num} {suffix}".format(num=len(sys.argv) - 1, suffix=suffix))
+    for i in range(1, len(sys.argv)):
+        print("{num}: {value}".format(num=i, value=sys.argv[i]))
