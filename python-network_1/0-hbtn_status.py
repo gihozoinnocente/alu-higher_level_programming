@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#Write a Python script that fetches https://alu-intranet.hbtn.io/status
 """A script that
 fetches https://intranet.hbtn.io/status.
 """
