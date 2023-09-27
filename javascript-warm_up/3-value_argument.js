@@ -6,4 +6,4 @@ if( firstArgument ){
 	console.log( firstArgument );
 } else {
 console.log('No argument');
-}
+};
