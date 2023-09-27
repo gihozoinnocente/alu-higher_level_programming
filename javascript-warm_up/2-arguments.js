@@ -2,9 +2,9 @@
 
 const arguments = process.argv.length
 
-if ( arguments === 0 ){
+if ( arguments === 2 ){
 	console.log( 'No argument' )
-} ifelse ( arguments === 1) {
+} ifelse ( arguments === 3) {
 	console.log( 'Argument found' )
 } else {
 	console.log ( 'Arguments found')
