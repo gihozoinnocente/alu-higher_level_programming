@@ -2,7 +2,7 @@
 
 const firstArgument = process.argv[2]
 
-if(firstArgumment){
+if(firstArgument){
 	console.log(firstArgument);
 } else {
 console.log('No argument');
