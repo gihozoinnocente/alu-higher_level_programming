@@ -7,5 +7,10 @@ if (argsLength === 2) {
 } else if (argsLength === 3) {
   console.log('Argument found');
 } else {
+<<<<<<< HEAD
   console.log('Arguments found');
 }
+=======
+	console.log ('Arguments found');
+};
+>>>>>>> 559d2eb9a73042f6ba8d9ab6bf2eb2e3c1161012
