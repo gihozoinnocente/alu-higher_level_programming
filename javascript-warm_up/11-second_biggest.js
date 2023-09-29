@@ -3,7 +3,7 @@
 const args = process.argv.slice(2);
 // Check if no arguments were passed or only one argument was passed
 if (args.length === 0 || args.length === 1) {
-  console.log("0");
+  console.log('0');
 } else {
   // Convert the arguments to an array of integers
   const integers = args.map(arg => parseInt(arg));
@@ -15,7 +15,6 @@ if (args.length === 0 || args.length === 1) {
   if (uniqueIntegers.length >= 2) {
     console.log(uniqueIntegers[1]);
   } else {
-    console.log("0");
-  };
-};
-
+    console.log('0');
+  }
+}
