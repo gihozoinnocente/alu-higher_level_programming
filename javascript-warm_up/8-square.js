@@ -3,7 +3,7 @@
 const size = process.argv[2];
 
 if (isNaN(size) || !Number.isInteger(Number(size))) {
-  console.log("Missing size");
+  console.log('Missing size');
 } else {
   const squareSize = parseInt(size);
 
