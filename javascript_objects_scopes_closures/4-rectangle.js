@@ -22,6 +22,7 @@ class Rectangle {
       console.log(row);
     }
   }
+  
   rotate () {
     // Exchange the width and height of the rectangle
     const temp = this.width;
