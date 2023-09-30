@@ -22,14 +22,14 @@ class Rectangle {
       console.log(row);
     }
   }
-  rotate() {
+  rotate () {
     // Exchange the width and height of the rectangle
     const temp = this.width;
     this.width = this.height;
     this.height = temp;
   }
 
-  double() {
+  double () {
     // Double the width and height of the rectangle
     this.width *= 2;
     this.height *= 2;
