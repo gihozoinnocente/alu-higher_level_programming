@@ -9,7 +9,7 @@ class Rectangle {
     this.height = h;
   }
 
-  print() {
+  print () {
     if (this.width <= 0 || this.height <= 0) {
       return; // If width or height is zero or negative, do nothing
     }
