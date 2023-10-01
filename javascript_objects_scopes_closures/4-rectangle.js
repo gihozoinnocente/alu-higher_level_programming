@@ -1,40 +1,33 @@
-#!/usr/bin/node#!/usr/bin/node
-class Rectangle {
+#!/usr/bin/node
+const Rectangle = class {
   constructor (w, h) {
-    if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
-      return {}; // Create an empty object if conditions are not met
+    if (w <= 0 || w === undefined || h <= 0 || h === undefined) {
+      // This Block does nothing
+    } else {
+      this.width = w;
+      this.height = h;
     }
-
-    this.width = w;
-    this.height = h;
   }
 
   print () {
-    if (this.width <= 0 || this.height <= 0) {
-      return; // If width or height is zero or negative, do nothing
-    }
-
-    for (let i = 0; i < this.height; i++) {
-      let row = '';
-      for (let j = 0; j < this.width; j++) {
-        row += 'X';
+    for (let h = 0; h < this.height; h++) {
+      let shape = '';
+      for (let w = 0; w < this.width; w++) {
+        shape = shape + 'X';
       }
-      console.log(row);
+      console.log(shape);
     }
   }
-  
+
   rotate () {
-    // Exchange the width and height of the rectangle
-    const temp = this.width;
+    const tempWidth = this.width;
     this.width = this.height;
-    this.height = temp;
+    this.height = tempWidth;
   }
 
   double () {
-    // Double the width and height of the rectangle
-    this.width *= 2;
-    this.height *= 2;
+    this.width = this.width * 2;
+    this.height = this.height * 2;
   }
-}
-
-module.exports = Rectangle; // Export the Rectangle class
+};
+module.exports = Rectangle;
